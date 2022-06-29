@@ -29,6 +29,7 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 ## Setup the Environment
 
 * Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv.
+* 
 
 ```bash
 python3 -m pip install --user virtualenv
@@ -50,12 +51,32 @@ source .devops/bin/activate
 4. Run test against docker and kubernetes:  `./make_prediction.sh`
 5. Upload docker image to Docker Hub:  `./upload_docker.sh`
 
-### Kubernetes Steps
+## Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+### Setup and Configure Docker locally
+
+1. create a virtual environment by running `make setup`
+2. then run `make install` to install the required things
+3. run `make lint` to check Dockerfile
+4. run `make build-app` to containerize the app
+5. run `./run_docker.sh` to run the docker image
+6. finally run `./make_prediction.sh` to query the app in the container
+  
+### Setup and Configure Kubernetes locally
+
+1. You can install k3s from rancher or use minikube
+2. The steps are provided in the run_kubernetes.sh script
+
+### Create Flask app in Container
+
+1. run `make build-app` to containerize the app
+2. run `./run_docker.sh` to run the docker image
+
+### Run via kubectl
+
+1. do `chmod +x run_kubernetes.sh` to make it executable
+2. then `./run_kubernetes.sh` to run the script
+3. finally run `./make_prediction.sh` to query the app in the kubernetes environment
 
 ## Files Explained
 

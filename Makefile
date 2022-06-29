@@ -24,6 +24,8 @@ test:
 
 lint: Dockerfile app.py
 	# See local hadolint install instructions:   https://github.com/hadolint/hadolint
+	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
+            chmod +x /bin/hadolint
 	# This is linter for Dockerfiles
 	hadolint Dockerfile
 	# This is a linter for Python source code linter: https://www.pylint.org/
@@ -37,6 +39,9 @@ run-circleci-local: config.yml
 	circleci local execute
 
 all: install lint test
+
+build-app: Dockerfile
+	docker build -t ml-app .
 
 access-app:
 	docker exec -it ml-app bash

@@ -7,3 +7,4 @@ Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
 Handling connection for 8000
+Prediction value: [20.35373177134412]
