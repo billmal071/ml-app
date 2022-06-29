@@ -1,6 +1,6 @@
 # UDACITY PROJECT 4: ML Microservice
 
-[![CircleCI](https://circleci.com/gh/billmal071/<PROJECT_NAME>.svg?style=svg)](<LINK>)
+[![CircleCI](https://circleci.com/gh/billmal071/ml-app.svg?style=svg)](https://app.circleci.com/pipelines/github/billmal071/ml-app/3/workflows/40583341-a365-4603-8596-7578b99d766b)
 
 ## Project Overview
 
