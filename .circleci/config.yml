@@ -40,6 +40,6 @@ jobs:
             make lint
 
 workflows:
-  build:
+  default:
     jobs:
       - build
