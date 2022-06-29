@@ -30,8 +30,7 @@ This a ML preidction app that is written in python and can be run using docker a
 
 ## Setup the Environment
 
-* Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv.
-* 
+* Create a virtualenv with Python 3.7 and activate it. Refer to this [link](https://www.python.org/downloads/) for help on specifying the Python version in the virtualenv.
 
 ```bash
 python3 -m pip install --user virtualenv
