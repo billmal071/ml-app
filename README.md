@@ -24,7 +24,9 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 **The final implementation of the project will showcase your abilities to operationalize production microservices.**
 
----
+## Summary
+
+This a ML preidction app that is written in python and can be run using docker and kubernetes. The project involves creating a dockerfile to containerize the app, then running the image and then pushing it to docker hub. Then we use kubernetes as container orchestrator to deploy the apps. Then test it on both environments.
 
 ## Setup the Environment
 
@@ -55,12 +57,13 @@ source .devops/bin/activate
 
 ### Setup and Configure Docker locally
 
-1. create a virtual environment by running `make setup`
-2. then run `make install` to install the required things
-3. run `make lint` to check Dockerfile
-4. run `make build-app` to containerize the app
-5. run `./run_docker.sh` to run the docker image
-6. finally run `./make_prediction.sh` to query the app in the container
+1. install docker as described in the [link](https://docs.docker.com/engine/install/ubuntu/).
+2. create a virtual environment by running `make setup`
+3. then run `make install` to install the required things
+4. run `make lint` to check Dockerfile
+5. run `make build-app` to containerize the app
+6. run `./run_docker.sh` to run the docker image
+7. finally run `./make_prediction.sh` to query the app in the container
   
 ### Setup and Configure Kubernetes locally
 
