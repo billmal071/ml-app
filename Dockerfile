@@ -1,4 +1,4 @@
-FROM python:3.7.13-slim
+FROM python:3.9.14-slim
 
 ## Step 1:
 # Create a working directory
